@@ -10,9 +10,6 @@ const { DefineUser } = require("./models/User")
     console.log('Connection has been established successfully.');
 } catch (error) {
         console.error('Unable to connect to the database:', error);
-        DefineUser(sequelize)
-        
-        sequelize.sync({force: true})
 }})()
 
 const port = 3000
