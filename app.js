@@ -13,6 +13,10 @@ const { DefineUser } = require("./models/User")
 }})()
 
 const port = 3000
+
+const post = require('./controllers/Post')
+app.use('./post', post)
+
 const auth = require('./controllers/Auth')
 
 app.use("/", auth)
